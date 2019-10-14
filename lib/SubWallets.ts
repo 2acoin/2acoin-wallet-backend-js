@@ -509,7 +509,7 @@ export class SubWallets {
         for (const transaction of this.lockedTransactions) {
             for (const [publicKey, amount] of transaction.transfers) {
                 if (lookupMap.has(publicKey)) {
-                    unlockedBalance += amount;
+                    lockedBalance += amount;
                 }
             }
         }
