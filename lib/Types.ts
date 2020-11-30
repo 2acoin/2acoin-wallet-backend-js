@@ -2,7 +2,7 @@
 //
 // Please see the included LICENSE file for more information.
 
-import { CreatedTransaction } from 'turtlecoin-utils';
+import { CreatedTransaction } from '2acoin-utils';
 
 import { WalletError } from './WalletError';
 

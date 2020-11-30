@@ -1,16 +1,16 @@
-![image](https://user-images.githubusercontent.com/34389545/35821974-62e0e25c-0a70-11e8-87dd-2cfffeb6ed47.png)
+![image](https://i.imgur.com/TvgbIeA.png)
 
 #### Master Build Status
-[![Build Status](https://travis-ci.org/turtlecoin/turtlecoin-wallet-backend-js.svg?branch=master)](https://travis-ci.org/turtlecoin/turtlecoin-wallet-backend-js)
+[![Build Status](https://travis-ci.org/2acoin/2acoin-wallet-backend-js.svg?branch=master)](https://travis-ci.org/2acoin/2acoin-wallet-backend-js)
 
 #### NPM
-[![NPM](https://nodei.co/npm/turtlecoin-wallet-backend.png?compact=true)](https://npmjs.org/package/turtlecoin-wallet-backend)
+[![NPM](https://nodei.co/npm/2acoin-wallet-backend.png?compact=true)](https://npmjs.org/package/2acoin-wallet-backend)
 
 #### Github
 
-https://github.com/turtlecoin/turtlecoin-wallet-backend-js
+https://github.com/2acoin/2acoin-wallet-backend-js
 
-# turtlecoin-wallet-backend
+# 2acoin-wallet-backend
 
 Provides an interface to the TurtleCoin network, allowing wallet applications to be built.
 
@@ -22,11 +22,11 @@ Provides an interface to the TurtleCoin network, allowing wallet applications to
 
 NPM:
 
-`npm install turtlecoin-wallet-backend --save`
+`npm install 2acoin-wallet-backend --save`
 
 Yarn:
 
-`yarn add turtlecoin-wallet-backend`
+`yarn add 2acoin-wallet-backend`
 
 ## Documentation
 
@@ -42,12 +42,12 @@ You can find an [example project in the examples](https://github.com/turtlecoin/
 ### Javascript
 
 ```javascript
-const WB = require('turtlecoin-wallet-backend');
+const WB = require('2acoin-wallet-backend');
 
 (async () => {
-    const daemon = new WB.Daemon('127.0.0.1', 11898);
+    const daemon = new WB.Daemon('127.0.0.1', 17910);
     /* OR
-    const daemon = new WB.Daemon('blockapi.turtlepay.io', 443);
+    const daemon = new WB.Daemon('blockapi.2acoin.org', 443);
     */
     
     const wallet = WB.WalletBackend.createWallet(daemon);
@@ -70,13 +70,13 @@ const WB = require('turtlecoin-wallet-backend');
 ### Typescript
 
 ```typescript
-import { WalletBackend, Daemon, IDaemon } from 'turtlecoin-wallet-backend';
+import { WalletBackend, Daemon, IDaemon } from '2acoin-wallet-backend';
 
 (async () => {
-    const daemon: IDaemon = new Daemon('127.0.0.1', 11898);
+    const daemon: IDaemon = new Daemon('127.0.0.1', 17910);
 
     /* OR
-    const daemon: IDaemon = new Daemon('blockapi.turtlepay.io', 443);
+    const daemon: IDaemon = new Daemon('blockapi.2acoin.org', 443);
     */
 
     const wallet: WalletBackend = WalletBackend.createWallet(daemon);
